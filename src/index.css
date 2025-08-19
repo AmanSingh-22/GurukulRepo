@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Warm spiritual color palette inspired by saffron and gold */
+    --background: 45 50% 98%;
+    --foreground: 20 50% 15%;
+
+    --card: 45 60% 96%;
+    --card-foreground: 20 50% 15%;
+
+    --popover: 45 60% 96%;
+    --popover-foreground: 20 50% 15%;
+
+    /* Saffron/Orange primary colors for spiritual feel */
+    --primary: 35 85% 55%;
+    --primary-foreground: 45 60% 98%;
+    --primary-glow: 35 90% 65%;
+
+    /* Warm golden secondary */
+    --secondary: 45 75% 88%;
+    --secondary-foreground: 20 50% 15%;
+
+    /* Soft warm muted colors */
+    --muted: 45 40% 92%;
+    --muted-foreground: 25 25% 45%;
+
+    /* Warm accent colors */
+    --accent: 40 80% 85%;
+    --accent-foreground: 20 50% 15%;
+    
+    /* Custom paragraph color - #333333 */
+    --paragraph-dark: 0 0% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 60% 98%;
+
+    --border: 45 30% 85%;
+    --input: 45 30% 85%;
+    --ring: 35 85% 55%;
+
+    /* Custom spiritual design tokens */
+    --gradient-hero: linear-gradient(135deg, hsl(35 85% 55%), hsl(40 90% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(45 60% 96%), hsl(45 40% 92%));
+    --gradient-wisdom: linear-gradient(45deg, hsl(35 80% 60%), hsl(25 70% 50%));
+    --shadow-warm: 0 10px 30px -10px hsl(35 85% 55% / 0.3);
+    --shadow-glow: 0 0 40px hsl(35 90% 65% / 0.4);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* Dark mode with warm undertones */
+    --background: 20 25% 8%;
+    --foreground: 45 60% 95%;
+
+    --card: 20 30% 12%;
+    --card-foreground: 45 60% 95%;
+
+    --popover: 20 30% 12%;
+    --popover-foreground: 45 60% 95%;
+
+    --primary: 35 85% 55%;
+    --primary-foreground: 20 25% 8%;
+    --primary-glow: 35 90% 65%;
+
+    --secondary: 25 20% 18%;
+    --secondary-foreground: 45 60% 95%;
+
+    --muted: 25 15% 15%;
+    --muted-foreground: 35 15% 65%;
+
+    --accent: 30 30% 22%;
+    --accent-foreground: 45 60% 95%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 45 60% 95%;
+
+    --border: 25 20% 18%;
+    --input: 25 20% 18%;
+    --ring: 35 85% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-source-sans;
+  }
+}
