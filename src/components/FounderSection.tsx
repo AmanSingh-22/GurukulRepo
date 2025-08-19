@@ -20,8 +20,8 @@ const FounderSection = () => {
             </div>
           </div>
           
-          <div className="space-y-6">
-            <div className="text-center lg:text-left">
+          <div className="space-y-6 text-center">
+            <div className="lg:text-center">
 
               <img 
                 src="/lovable-uploads/2592abeb-26bc-471f-ac6d-a82fef17285f.png"
