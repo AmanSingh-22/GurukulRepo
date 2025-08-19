@@ -25,7 +25,7 @@ const BlogCard = ({ title, author, readTime, image, slug, priority = false }: Bl
           />
         </div>
         <div className="p-6">
-          <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors line-clamp-2">
+          <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors line-clamp-2 h-14">
             {title}
           </h3>
           <div className="flex items-center justify-between text-sm text-muted-foreground">
